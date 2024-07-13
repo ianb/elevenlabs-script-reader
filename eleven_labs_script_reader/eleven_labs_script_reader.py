@@ -80,7 +80,7 @@ def get_or_generate_audio(client, entry, cache_dir):
                     stability=voice_settings.get('stability', 0.75),
                     similarity_boost=voice_settings.get('similarity_boost', 0.75),
                     style=voice_settings.get('style', 0.0),
-                    use_speaker_boost=voice_settings.get('use_speaker_boost', False)
+                    use_speaker_boost=voice_settings.get('use_speaker_boost', True)
                 )
             )
         )

@@ -1,8 +1,11 @@
 """Console script for eleven_labs_script_reader."""
+from dotenv import load_dotenv
 import sys
 import os
 import click
 from .eleven_labs_script_reader import process_script, concatenate_audio_files
+
+load_dotenv()
 
 @click.command()
 @click.argument('scripts', nargs=-1, type=click.Path(exists=True))
